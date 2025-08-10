@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",function(){
         event.preventDefault();
         const username = document.getElementById('username').value.trim();
         const UserEmail = document.getElementById('email').value.trim(); 
-        const UserPasswrd = document.getElementById('password').value.trim();
+        const Password = document.getElementById('password').value.trim();
         let isValid = true;
         const messages = [];
         if(username.length < 3){
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",function(){
             isValid = false;
             messages.push("Email must contain '@' and '.'");
         }
-        if(UserPasswrd.length >= 8){
+        if(Password.length >= 8){
             isValid = false;
             messages.push("Password should be at least 8 characters long");
         }
